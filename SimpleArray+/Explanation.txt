@@ -1,0 +1,19 @@
+The Goal: The simpleArraySum Function The main goal is to finish the function named simpleArraySum. This function's whole job is to take a list of whole numbers (ar) and figure out the total sum of every number in that list.
+
+The Missing Step The function is blank. To fix it, you need the one line that adds everything in the list ar together and sends the result out:
+
+C#
+
+public static int simpleArraySum(List<int> ar)
+{
+    return ar.Sum();
+}
+This fixed function takes the list, adds all the numbers using the handy .Sum() tool, and returns the grand total.
+
+The Main Program (The Setup) This part handles the input and output (all the stuff with TextWriter and StreamWriter is just boring technical setup to get the answer out).
+
+Get Input The program first reads the size of the list (arCount), and then it reads the line that has all the numbers. It splits up those numbers and saves them as a list of integers called ar.
+
+The Call The program says: int result = Result.simpleArraySum(ar);. This sends the fully prepared list of numbers (ar) to the function you fixed. The total that comes back is saved in the result variable.
+
+Finish The program takes that final result number (the total sum) and prints it to the output. Done.

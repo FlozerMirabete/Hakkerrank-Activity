@@ -1,0 +1,27 @@
+START
+            |
+            v
+     Read integer arCount 
+     (Number of elements)
+            |
+            v
+     Read line of numbers
+     and store as List ar
+            |
+            v
+     Call simpleArraySum(ar)
+            |
+            v
+     Inside simpleArraySum:
+       Loop through List ar
+       Calculate total sum
+       Return total sum
+            |
+            v
+     Store result in 'result'
+            |
+            v
+     Write 'result' to output
+            |
+            v
+          END
