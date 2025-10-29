@@ -1,0 +1,31 @@
+START
+            |
+            v
+       Read integer n (matrix size)
+            |
+            v
+     Initialize empty list arr (List<List<int>>)
+            |
+            v
+  Loop i = 0 to n-1:
+    - Read a row of space-separated values
+    - Convert the row into a List<int>
+    - Add the row to arr
+            |
+            v
+     Call diagonalDifference(arr)
+            |
+            v
+  Inside diagonalDifference:
+    - Initialize sumPrimary = 0, sumSecondary = 0
+    - Loop i = 0 to n-1:
+        - Add arr[i][i] to sumPrimary (Primary Diagonal)
+        - Add arr[i][n-i-1] to sumSecondary (Secondary Diagonal)
+    - Calculate absolute difference: abs(sumPrimary - sumSecondary)
+    - Return result
+            |
+            v
+     Write result to output
+            |
+            v
+          END

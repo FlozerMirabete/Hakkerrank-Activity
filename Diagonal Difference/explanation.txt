@@ -1,0 +1,24 @@
+1. Set Up (n)
+First thing: You gotta tell the computer the size of the matrix (n). If it's a 4 x 4, you type 4. That n number runs everything.
+
+2. Build the Matrix (arr)
+We create an empty box called arr to hold the whole grid.
+Then, we loop n times. Each time, we read a line of numbers you put in (the row) and stick it into arr. Now you have your full matrix.
+
+3. The Main Job
+We send the whole matrix (arr) to the diagonalDifference function. This is where the magic happens.
+
+Inside the Function
+
+4. Tally the Diagonals
+We start two counters at zero: sumPrimary and sumSecondary.
+We run one loop from i = 0 up to n-1. This single loop hits both diagonals:
+Primary (Top-Left to Bottom-Right): Add the number at arr[i][i] to sumPrimary. (It's always row i, column i).
+Secondary (Top-Right to Bottom-Left): Add the number at arr[i][n - i - 1] to sumSecondary. (The column count goes backward as the row count goes forward.)
+
+5. The Final Answer
+Once the loop finishes, we just subtract the two totals and make sure the answer is positive (that's the "absolute difference" part).
+The function spits that number back out.
+
+6. Finish
+The program prints that final positive number. Done.
