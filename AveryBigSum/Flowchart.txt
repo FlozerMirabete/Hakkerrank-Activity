@@ -1,0 +1,27 @@
+START
+            |
+            v
+     Read integer arCount 
+     (Number of elements)
+            |
+            v
+     Read line of large numbers
+     and store as List ar (long)
+            |
+            v
+     Call aVeryBigSum(ar)
+            |
+            v
+     Inside aVeryBigSum:
+       Loop through List ar
+       Calculate total sum (long)
+       Return total sum
+            |
+            v
+     Store result in 'result'
+            |
+            v
+     Write 'result' to output
+            |
+            v
+          END
