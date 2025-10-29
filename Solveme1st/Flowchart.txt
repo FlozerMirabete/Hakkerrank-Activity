@@ -1,0 +1,24 @@
+START
+            |
+            v
+     Read integer val1
+            |
+            v
+     Read integer val2
+            |
+            v
+     Call solveMeFirst(val1, val2) 
+            |
+            v
+     Inside solveMeFirst:
+       Calculate and Return
+          val1 + val2
+            |
+            v
+     Store result in sum
+            |
+            v
+     Write sum to output
+            |
+            v
+          END

@@ -1,0 +1,25 @@
+Set Up (The Inputs)
+
+First thing: The main program needs the numbers to add. It reads the first line you type and saves it as val1. It then reads the second line and saves it as val2.
+
+The Function (solveMeFirst)
+
+We have a function named solveMeFirst(int a, int b). It's designed to take the two input numbers (a and b) and give back one result.
+
+The Main Job
+
+The core job is to fix the function so it actually adds. We add the line return a + b; to make it work. This is where the magic happens.
+
+The Call
+
+The main program calls the function: int sum = solveMeFirst(val1, val2);.
+
+This sends the two input values (val1 and val2) into the function to be added.
+
+The Final Answer
+
+The solveMeFirst function returns the calculated sum. This result is saved into a new variable called sum.
+
+Finish
+
+The program prints the final sum number to the output screen. Done.
