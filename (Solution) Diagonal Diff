@@ -1,0 +1,62 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+
+class Result
+{
+    /*
+     * Complete the 'diagonalDifference' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts 2D_INTEGER_ARRAY arr as parameter.
+     */
+
+    public static int diagonalDifference(List<List<int>> arr)
+    {
+        int n = arr.Count;  // Size of the matrix
+        int sumPrimary = 0;
+        int sumSecondary = 0;
+
+        // Loop through the rows of the matrix
+        for (int i = 0; i < n; i++)
+        {
+            sumPrimary += arr[i][i];                // Primary diagonal: arr[i][i]
+            sumSecondary += arr[i][n - i - 1];      // Secondary diagonal: arr[i][n-i-1]
+        }
+
+        // Return the absolute difference between the sums
+        return Math.Abs(sumPrimary - sumSecondary);
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        // Read the size of the matrix (n x n)
+        int n = Convert.ToInt32(Console.ReadLine().Trim());
+
+        // Create a list of lists to represent the matrix
+        List<List<int>> arr = new List<List<int>>();
+
+        // Read the matrix elements
+        for (int i = 0; i < n; i++)
+        {
+            // Split the input row into a list of integers and add it to the matrix
+            arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
+        }
+
+        // Call the diagonalDifference function and get the result
+        int result = Result.diagonalDifference(arr);
+
+        // Write the result to the output
+        textWriter.WriteLine(result);
+
+        // Flush and close the writer
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
