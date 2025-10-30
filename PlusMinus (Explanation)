@@ -1,0 +1,19 @@
+It asks how many numbers you’re gonna type (n).
+
+Then you type that many numbers, like -4 3 -9 0 4 1.
+
+The code looks at each number one by one.
+
+If it’s bigger than 0 → it’s positive.
+
+If it’s smaller than 0 → it’s negative.
+
+If it’s 0 → well, it’s zero.
+
+It keeps track of how many of each type there are.
+
+When it’s done, it figures out what fraction of the numbers were positive, negative, or zero.
+
+Like, if half are positive, that’s 0.5.
+
+Then it prints those fractions, making sure each one has 6 numbers after the dot (like 0.500000).
