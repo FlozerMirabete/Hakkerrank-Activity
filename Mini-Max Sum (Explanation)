@@ -1,0 +1,20 @@
+1. Input: You give the program 5 numbers in a line, like 
+   1 2 3 4 5
+
+2. Sort: The program arranges those numbers from smallest to largest.  
+   Now we know the smallest number is`1 and the largest is 5.
+
+3. Sum: The program adds up all the numbers together:
+
+   1 + 2 + 3 + 4 + 5 = 15
+
+4. Calculate the Minimum Sum: The minSum is the total sum minus the largest number (5)
+
+   15 - 5 = 10
+
+5. Calculate the Maximum Sum**: The maxSum is the total sum minus the smallest number (1):
+
+   15 - 1 = 14
+
+6. Output: It then prints the two sums on the same line, separated by a space:  
+   10 14
