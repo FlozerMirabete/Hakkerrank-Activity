@@ -1,0 +1,46 @@
+using System;
+using System.IO;
+
+class Result
+{
+    public static string timeConversion(string s)
+    {
+        string period = s.Substring(8, 2);
+        string hour = s.Substring(0, 2);
+        string minuteSecond = s.Substring(2, 6);
+
+        if (period == "AM")
+        {
+            if (hour == "12")
+            {
+                hour = "00";
+            }
+        }
+        else
+        {
+            if (hour != "12")
+            {
+                hour = (int.Parse(hour) + 12).ToString();
+            }
+        }
+
+        return hour + minuteSecond;
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        string s = Console.ReadLine();
+
+        string result = Result.timeConversion(s);
+
+        textWriter.WriteLine(result);
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
