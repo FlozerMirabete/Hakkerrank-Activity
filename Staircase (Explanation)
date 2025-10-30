@@ -1,0 +1,15 @@
+You type a number n — that’s how many steps you want in your staircase.
+
+The code starts at step 1 and goes up to step n.
+
+For each step:
+
+It puts some spaces first so the step is pushed to the right (n - current step spaces).
+
+Then it puts some # symbols for the step itself (current step number of #).
+
+It prints the spaces and hashes together as one line.
+
+Repeat until you reach the last step.
+
+Boom — you get a staircase that looks right-aligned, like this if n = 6:
