@@ -1,0 +1,21 @@
+Start  
+ ↓  
+Read input line  
+ ↓  
+Split input by space → convert to integers → store in List<int> arr  
+ ↓  
+Call miniMaxSum(arr)  
+ ↓  
+totalSum = sum of all elements in arr (as long)  
+ ↓  
+minVal = smallest element in arr  
+ ↓  
+maxVal = largest element in arr  
+ ↓  
+minSum = totalSum - maxVal  
+ ↓  
+maxSum = totalSum - minVal  
+ ↓  
+Print "minSum maxSum"  
+ ↓  
+End

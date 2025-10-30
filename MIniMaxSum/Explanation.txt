@@ -1,0 +1,15 @@
+Sorting the List:
+
+The array arr is sorted in ascending order. This makes it easy to pick the smallest and largest 4 numbers.
+
+Minimum Sum:
+
+We take the first 4 numbers from the sorted list (arr.Take(4)) and sum them. This will give us the minimum sum.
+
+Maximum Sum:
+
+We skip the first number (arr.Skip(1)) and then take the next 4 numbers. This will give us the maximum sum.
+
+Printing the Results:
+
+Both the minimum and maximum sums are printed in the same line, separated by a space.
