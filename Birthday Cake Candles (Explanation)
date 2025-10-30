@@ -1,0 +1,11 @@
+1. Input: You give the program the number of candles and their heights, like:
+   3 2 1 3 3
+
+2. Find the tallest candle: The program looks through the list of candles and finds the tallest one.
+   In this case, the tallest is 3.
+
+3. Count the tallest candles: The program then counts how many candles are that tall.
+   In this case, there are three candles that are 3 units tall.
+
+4. Output: It then prints the count of tallest candles.
+   So the program will print 3.
