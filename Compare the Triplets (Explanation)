@@ -1,0 +1,23 @@
+Here’s the explanation without any special formatting:
+
+---
+
+1. Input: You give the program two sets of scores, one for Alice and one for Bob. Each set has three scores, like:
+   `5 6 7` for Alice and `3 6 10` for Bob.
+
+2. Compare the Scores:
+
+   For each category (score in the triplet), the program compares Alice's score and Bob's score.
+   If Alice's score is higher, she gets 1 point.
+   If Bob's score is higher, he gets 1 point.
+   If both scores are the same, nobody gets a point.
+
+3. Calculate Total Points:
+
+   * After comparing all three categories, the program adds up Alice's and Bob's points.
+
+4. Output: The program then prints Alice's total points first, followed by Bob's total points, separated by a space. For example, `1 1`.
+
+---
+
+Let me know if this works!
