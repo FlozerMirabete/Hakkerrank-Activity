@@ -1,0 +1,11 @@
+1. Input: You give the program the range of Sam's house (from `s` to `t`), the positions of the apple tree (`a`) and orange tree (`b`), and the distances each apple and orange falls.
+
+2. Apple Landing: The program calculates where each apple lands by adding the distance it falls to the position of the apple tree. It checks if each apple falls on Sam's house (within the range `s` to `t`).
+
+3. Orange Landing: Similarly, the program calculates where each orange lands by adding the distance it falls to the position of the orange tree. It checks if each orange lands on Sam's house (within the range `s` to `t`).
+
+4. Count Apples: The program counts how many apples land on Sam's house.
+
+5. Count Oranges: It then counts how many oranges land on Sam's house.
+
+6. Output: The program prints the number of apples on the first line and the number of oranges on the second line.
