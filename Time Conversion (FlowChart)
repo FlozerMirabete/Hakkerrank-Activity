@@ -1,0 +1,29 @@
+               Start
+                 |
+                 ▼
+    Read the time in 12-hour format
+                 |
+                 ▼
+    Extract period (AM/PM), hour, minute, and second
+                 |
+                 ▼
+          Is the period AM?
+            /         \
+          Yes          No
+           |            |
+    Is hour == "12"?    Is hour != "12"?
+           |            /       \
+        Yes | No     Yes       No
+           |            |         |
+    Set hour to "00"    Add 12 to hour
+           |            |         |
+           └────────────┴─────────┘
+                        |
+                        ▼
+         Combine hour, minute, and second into final 24-hour format
+                        |
+                        ▼
+                Output the result
+                        |
+                        ▼
+                     End
