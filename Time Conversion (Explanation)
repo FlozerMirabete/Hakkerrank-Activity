@@ -1,0 +1,21 @@
+1. Input: You give the program the time in 12-hour format (e.g., "07:05:45PM").
+
+2. Extract Parts: The program splits the time into:
+
+    Period (AM/PM)
+    Hour
+    Minute and second
+
+3. Convert the Hour:
+
+    If it's AM:
+
+      If the hour is "12", change it to "00" (midnight).
+      Otherwise, leave the hour as is.
+    If it's PM:
+
+     If the hour is not "12", add 12 to the hour (convert to 24-hour format).
+
+4. Combine: The program combines the updated hour with the minute and second to form the final 24-hour time.
+
+5. Output: It then prints the time in 24-hour format (e.g., "19:05:45").
