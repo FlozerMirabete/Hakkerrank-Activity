@@ -1,0 +1,32 @@
+               Start
+                 |
+                 ▼
+   Read list 'a' (Alice's scores)
+                 |
+                 ▼
+   Read list 'b' (Bob's scores)
+                 |
+                 ▼
+   Initialize Alice's score = 0, Bob's score = 0
+                 |
+                 ▼
+        Loop through the 3 categories (i = 0 to 2)
+                 |
+        ┌────────┴──────────┐
+        ▼                   ▼
+   Is a[i] > b[i]?    Is a[i] < b[i]?
+        |                     |
+    Yes | No               Yes | No
+        |                     |
+   Alice score +1         Bob score +1
+        |                     |
+        └─────────────────────┘
+                 |
+                 ▼
+   After loop ends: Return [Alice's score, Bob's score]
+                 |
+                 ▼
+             Output result
+                 |
+                 ▼
+                End
