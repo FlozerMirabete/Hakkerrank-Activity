@@ -1,0 +1,19 @@
+        Start
+                    │
+                    ▼
+        Read candlesCount (number of candles)
+                    │
+                    ▼
+        Read the list of candles
+                    │
+                    ▼
+        Find the maximum height in the candles list
+                    │
+                    ▼
+        Count how many candles have the maximum height
+                    │
+                    ▼
+        Return the count of tallest candles
+                    │
+                    ▼
+               End
