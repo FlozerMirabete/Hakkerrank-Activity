@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Result
+{
+    public static void miniMaxSum(List<int> arr)
+    {
+        arr.Sort();
+        long totalSum = arr.Sum(x => (long)x);
+        long minSum = totalSum - arr[4];
+        long maxSum = totalSum - arr[0];
+        Console.WriteLine($"{minSum} {maxSum}");
+    }
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+        Result.miniMaxSum(arr);
+    }
+}
