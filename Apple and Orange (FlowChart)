@@ -1,0 +1,23 @@
+Start
+↓
+Read house range (s, t)
+↓
+Read tree positions (a, b)
+↓
+Read apple distances
+↓
+Read orange distances
+↓
+Calculate apples' landing
+↓
+Count apples on house
+↓
+Calculate oranges' landing
+↓
+Count oranges on house
+↓
+Print number of apples
+↓
+Print number of oranges
+↓
+End
