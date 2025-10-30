@@ -1,0 +1,22 @@
+        Start
+                    │
+                    ▼
+        Read input integers into arr
+                    │
+                    ▼
+        Sort the array arr in ascending order
+                    │
+                    ▼
+        Calculate totalSum = sum(arr)
+                    │
+                    ▼
+        minSum = totalSum - arr[4] (largest element)
+                    │
+                    ▼
+        maxSum = totalSum - arr[0] (smallest element)
+                    │
+                    ▼
+        Print minSum and maxSum as space-separated values
+                    │
+                    ▼
+               End
