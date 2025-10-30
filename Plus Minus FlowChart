@@ -1,0 +1,41 @@
+        Start
+                    │
+                    ▼
+       Read integer n (array size)
+                   │
+                   ▼
+     Read array of n integers (arr)
+                 │
+                 ▼
+  Initialize counts:
+  positiveCount = 0, negativeCount = 0,
+  zeroCount = 0
+              │
+              ▼
+    Loop through each number in
+               arr
+                │
+        ┌───────┼───────────────────────┐
+        │       │                       │
+        ▼       ▼                       ▼
+  num > 0?   num < 0?    No →  num == 0
+      │Yes          │Yes               │Yes
+      ▼              ▼                  ▼
+ positiveCnt+   negativeCnt+        zeroCnt+
+      │              │                  │
+      └──────────────┴──────────────────┘
+                     │
+                     ▼
+        After loop ends:
+        totalCount = arr.Count
+        positiveRatio = pos/total
+        negativeRatio = neg/total
+        zeroRatio = zero/total
+                    │
+                    ▼
+   Print positiveRatio (6 digits)
+   Print negativeRatio (6 digits)
+   Print zeroRatio (6 digits)
+               │
+               ▼
+              End
