@@ -1,0 +1,23 @@
+        Start
+                    │
+                    ▼
+        Read integer n (staircase size)
+                    │
+                    ▼
+          i = 1
+                    │
+                    ▼
+        Loop while i <= n
+                    │
+                    ▼
+        spaces = n - i
+        hashes = i
+                    │
+                    ▼
+        Print (spaces + hashes)
+                    │
+                    ▼
+          i = i + 1
+                    │
+                    ▼
+        Repeat loop until i > n
